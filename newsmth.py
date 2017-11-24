@@ -24,7 +24,7 @@ headers = {
 url = 'http://www.newsmth.net/nForum/user/ajax_login.json'
 session = requests.session()
 session.get('http://www.newsmth.net')
-payload = {'id':'yyhn1959','passwd':'yourpw'}
+payload = {'id':'yourid','passwd':'yourpw'}
 time.sleep(2)
 con = session.post(url,data = payload,headers = headers)
 print con.status_code
